@@ -1,6 +1,8 @@
 # Homebrew Tap for Ink
 
-Homebrew formulae for [Ink](https://ml.ink) — the cloud platform for deploying and managing services.
+[Ink](https://ml.ink) is a cloud platform designed for AI agents to deploy and manage services autonomously. It makes deployments simple enough that fully autonomous agents can handle the entire lifecycle — create, deploy, monitor, and scale services without human intervention.
+
+This repository contains Homebrew formulae for Ink tools.
 
 ## Install
 

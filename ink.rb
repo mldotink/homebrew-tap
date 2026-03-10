@@ -5,21 +5,21 @@
 class Ink < Formula
   desc "Deploy and manage services on Ink"
   homepage "https://ml.ink"
-  version "0.1.19"
+  version "0.1.20"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mldotink/cli/releases/download/v0.1.19/ink_0.1.19_darwin_amd64.tar.gz"
-      sha256 "276a2d64200a0eb210b913d18b46f1ed0c071a9284c51f42dc4e4271eb7cd05b"
+      url "https://github.com/mldotink/cli/releases/download/v0.1.20/ink_0.1.20_darwin_amd64.tar.gz"
+      sha256 "68b10719ee88c02affc3736d39d1c2ae23b0e365f9f875bd96f5c6ed2e8d58c0"
 
       define_method(:install) do
         bin.install "ink"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mldotink/cli/releases/download/v0.1.19/ink_0.1.19_darwin_arm64.tar.gz"
-      sha256 "14f315c129ed789abcef3cf9f05838205851c8c84dc8f466f6e358b1cfc3672e"
+      url "https://github.com/mldotink/cli/releases/download/v0.1.20/ink_0.1.20_darwin_arm64.tar.gz"
+      sha256 "c3de2f8030675a1a7956865b98e8b57f5d6eb7eac14546aa63fd4865268cea54"
 
       define_method(:install) do
         bin.install "ink"
@@ -29,15 +29,15 @@ class Ink < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mldotink/cli/releases/download/v0.1.19/ink_0.1.19_linux_amd64.tar.gz"
-      sha256 "4fef9c6ef4e11f07fc05a8bde2dc4d57a9b424c203a8c5f633ea96852eac42cd"
+      url "https://github.com/mldotink/cli/releases/download/v0.1.20/ink_0.1.20_linux_amd64.tar.gz"
+      sha256 "6260091fb34f18bcdf839e0dc0953622a871cfc7d9cd90559809131b85538f71"
       define_method(:install) do
         bin.install "ink"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mldotink/cli/releases/download/v0.1.19/ink_0.1.19_linux_arm64.tar.gz"
-      sha256 "32e50e24e8ec837a541834e2610ac8c82094c4329208eed1a2a9dcb6f43e8cb1"
+      url "https://github.com/mldotink/cli/releases/download/v0.1.20/ink_0.1.20_linux_arm64.tar.gz"
+      sha256 "416a91d33b1a81d30f8fa65fcf5be8e9faae95c500980d324e9874bd88c34b05"
       define_method(:install) do
         bin.install "ink"
       end
